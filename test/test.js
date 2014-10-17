@@ -18,7 +18,8 @@
                 'http://[1080:0:0:0:8:800:200C:417A]'
             ],
             invalidUris = [
-                'file:/asda'
+                'file:/asda',
+                'qwerty'
             ];
         it('should be instantiated', function () {
             lib.should.be.ok;
