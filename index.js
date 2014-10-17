@@ -1,5 +1,4 @@
 (function(module) {
-    //var uriRegex = /^[a-z][a-zA-Z0-9+\.-]*:(([\//]{2}[\//]?)|[^\/])([a-zA-Z0-9-\._~%]+:?([a-zA-Z0-9-\._~%]+)?@)?(([a-zA-Z0-9-._~%!$&'()*+,;=]{0,255})|(([0-9]{1,3}\.){3}[0-9]{1,3})|(\[(v[a-fA-F0-9]+\.[a-zA-Z0-9-\._~!$&'()*+,;=:]+)\])|(?!\..+\])((\[([a-fA-F0-9]{1,4}:){5}((([a-fA-F0-9]{1,4}:){2}[a-fA-F0-9]{1,4})|(:([0-9]{1,3}\.){3}[0-9]{1,3}))\])|(\[([a-fA-F0-9]{1,4}:){1,6}:([a-fA-F0-9]{1,4}:?){1,6}\])))?(:[0-9]+)?((\/[a-zA-Z0-9-._~%!$&'()*+,;=:@]*)*|(\/?[a-zA-Z0-9-._~%!$&'()*+,;=:@](\/?[a-zA-Z0-9-._~%!$&'()*+,;=:@]*)*))?(\?[a-zA-Z0-9-._~%!$&'()*+,;=:@?\/]*)?(#[a-zA-Z0-9-._~%!$&'()*+,;=:@?\/]*)?$/;
 
     /**
      * Basic Values (http://tools.ietf.org/html/rfc3986#page-11)
@@ -31,8 +30,7 @@
      *
      * @type {string}
      */
-    var alpha = 'a-zA-Z',
-        alphaOnly = '[' + alpha + ']';
+    var alpha = 'a-zA-Z';
 
     /**
      * Hexadecimal Digit (http://tools.ietf.org/html/rfc2234#page-11)
@@ -55,8 +53,7 @@
      *
      * @type {string}
      */
-    var unreserved = alpha + digit + '-\\._~',
-        unreservedOnly = '[' + unreserved + ']';
+    var unreserved = alpha + digit + '-\\._~';
 
     /**
      * Percent Encoded (http://tools.ietf.org/html/rfc3986#page-12)
@@ -75,8 +72,7 @@
      *
      * @type {string}
      */
-    var pctEncoded = '%' + hexDigit,
-        pctEncodedOnly = '%' + hexDigitOnly + hexDigitOnly;
+    var pctEncoded = '%' + hexDigit;
 
     /**
      * Sub Delimiters (http://tools.ietf.org/html/rfc3986#page-13)
@@ -87,8 +83,7 @@
      *
      * @type {string}
      */
-    var subDelims = '!$&\'()*+,;=',
-        subDelimsOnly = '[' + subDelims + ']';
+    var subDelims = '!$&\'()*+,;=';
 
     /**
      * PChar (http://tools.ietf.org/html/rfc3986#page-23)
