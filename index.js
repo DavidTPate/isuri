@@ -115,7 +115,7 @@
      *
      * @type {string}
      */
-    var decOctect = digit + or + '[1-9]' + digit + or + '1' + digit + digit + or + '2' + '[0-4]' + digit + or + '25' + '[0-5]';
+    var decOctect = '(' + digitOnly + or + '[1-9]' + digitOnly + or + '1' + digitOnly + digitOnly + or + '2' + '[0-4]' + digitOnly + or + '25' + '[0-5])';
 
     /**
      * Scheme (http://tools.ietf.org/html/rfc3986#page-17)
