@@ -49,8 +49,15 @@
         it('should be instantiated', function () {
             lib.should.be.ok;
         });
-        it('should have the test function', function () {
+        it('should have the test property', function () {
             lib.test.should.be.a.function;
+        });
+        it('should have the regex property', function () {
+            lib.regex.should.be.an.object;
+        });
+        it('should be able to use the regex', function() {
+           var matches =  lib.regex.exec('http://asdf:qw%20er@localhost:8000?asdf=12345&asda=fc%2F#bacon');
+            matches.should.be.ok;
         });
 
         describe('Validity Tests', function () {

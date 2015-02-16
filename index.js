@@ -381,6 +381,7 @@
     }
 
     module.exports = {
-        test: testUri
+        test: testUri,
+        regex: uriRegex
     };
 }(module));
