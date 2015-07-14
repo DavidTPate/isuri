@@ -7,7 +7,7 @@ module.exports = function (grunt, opts) {
             mangle: false,
             sourceMap: true,
             drop_console: true,
-            sourceMapName: 'src/isuri.map'
+            sourceMapName: 'dist/isuri.min.map'
         },
         all: {
             files: {
