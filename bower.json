@@ -1,0 +1,17 @@
+{
+    "name": "isuri",
+    "main": "dist/isuri.js",
+    "version": "0.0.2",
+    "homepage": "https://github.com/sixertoy/isuri",
+    "authors": [
+    "sixertoy <sixertoy.github@gmail.com>"
+  ],
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}
