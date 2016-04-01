@@ -1,40 +1,46 @@
 {
-    "name": "isuri",
-    "description": "Pure Javascript implementation for truly checking if the provided input is an URI. Based on RFC 3986.",
-    "version": "1.1.0",
-    "author": {
-        "name" : "David Pate",
-        "email" : "me@davidtpate.com",
-        "url" : "http://davidtpate.com"
-    },
-    "keywords": [
-        "uri",
-        "url",
-        "type",
-        "checker",
-        "validator",
-        "validate"
-    ],
-    "homepage": "https://github.com/DavidTPate/isuri",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/DavidTPate/isuri.git"
-    },
-    "bugs": {
-        "url": "https://github.com/DavidTPate/isuri/issues"
-    },
-    "license": "MIT",
-    "main": "index.js",
-    "devDependencies": {
-        "istanbul": "^0.x",
-        "mocha": "^1.x",
-        "should": "^4.x",
-        "benchmark": "^1.x",
-        "beautify-benchmark": "^0.x"
-    },
-    "scripts": {
-        "test": "mocha --check-leaks --bail --reporter spec test/",
-        "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --check-leaks --reporter dot test/",
-        "test-travis": "istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --check-leaks --reporter spec test/"
-    }
+  "name": "is-uri",
+  "description": "Javascript implementation for truly checking if the provided input is a valid URI, Based on RFC 3986.",
+  "version": "1.0.0",
+  "author": {
+    "name": "David Pate",
+    "email": "me@davidtpate.com",
+    "url": "http://davidtpate.com"
+  },
+  "keywords": [
+    "uri",
+    "url",
+    "iri",
+    "rfc3986",
+    "3986"
+  ],
+  "homepage": "https://github.com/DavidTPate/isuri",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DavidTPate/isuri.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DavidTPate/isuri/issues"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "dependencies": {
+    "rfc-3986": "1.0.1"
+  },
+  "devDependencies": {
+    "beautify-benchmark": "0.2.4",
+    "benchmark": "2.1.0",
+    "eslint": "2.5.3",
+    "istanbul": "0.4.2",
+    "jscs": "2.11.0",
+    "jsinspect": "0.8.0",
+    "mocha": "2.4.5",
+    "webpack": "^.12.14"
+  },
+  "scripts": {
+    "cover": "istanbul cover _mocha -- --check-leaks --bail test && istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "lint": "eslint . && jscs . && jsinspect .",
+    "test": "npm run lint && npm run cover",
+    "build": "webpack"
+  }
 }
