@@ -1,7 +1,7 @@
 {
   "name": "isuri",
   "description": "Javascript implementation for truly checking if the provided input is a valid URI, Based on RFC 3986.",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "author": {
     "name": "David Pate",
     "email": "me@davidtpate.com",
@@ -35,7 +35,7 @@
     "jscs": "2.11.0",
     "jsinspect": "0.8.0",
     "mocha": "2.4.5",
-    "webpack": "^.12.14"
+    "webpack": "1.12.14"
   },
   "scripts": {
     "cover": "istanbul cover _mocha -- --check-leaks --bail test && istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
