@@ -8,7 +8,7 @@ suite.add({
     name: 'isUri#test(uri)',
     minSamples: 100,
     fn: function () {
-        isUri.test(testUri);
+        isUri.isValid(testUri);
     }
 }).on('start', function onCycle() {
     process.stdout.write('  Testing URI "' + testUri + '"\n\n')
