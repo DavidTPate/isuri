@@ -3,5 +3,5 @@
   "identifiers": true,
   "diff": true,
   "color": true,
-  "ignore": "node_modules|coverage|test|benchmark"
+  "ignore": "node_modules|coverage|test|benchmark|dist"
 }

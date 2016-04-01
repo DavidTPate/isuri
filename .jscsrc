@@ -3,7 +3,8 @@
   "excludeFiles": [
     "node_modules/*",
     "coverage/*",
-    "benchmark/*"
+    "benchmark/*",
+    "dist/*"
   ],
   "fileExtensions": [
     ".js"
