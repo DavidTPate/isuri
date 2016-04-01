@@ -1,7 +1,7 @@
 {
-  "name": "is-uri",
+  "name": "isuri",
   "description": "Javascript implementation for truly checking if the provided input is a valid URI, Based on RFC 3986.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": {
     "name": "David Pate",
     "email": "me@davidtpate.com",
