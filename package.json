@@ -31,6 +31,7 @@
     "beautify-benchmark": "0.2.4",
     "benchmark": "2.1.0",
     "eslint": "2.7.0",
+    "expose-loader": "^0.7.1",
     "istanbul": "0.4.3",
     "jscs": "2.11.0",
     "jsinspect": "0.8.0",
