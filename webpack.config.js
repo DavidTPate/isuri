@@ -14,5 +14,8 @@ module.exports = {
         loaders: [
             { test: require.resolve('./index'), loader: 'expose?isUri' }
         ]
-    }
+    },
+    plugins: [
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 };
