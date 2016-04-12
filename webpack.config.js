@@ -10,10 +10,9 @@ module.exports = {
             'window'
         ]
     },
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin(),
-        new webpack.ProvidePlugin({
-            'isUri': './index'
-        })
-    ]
+    module: {
+        loaders: [
+            { test: require.resolve('./index'), loader: 'expose?isUri' }
+        ]
+    }
 };
