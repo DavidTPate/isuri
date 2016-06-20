@@ -32,7 +32,7 @@
     "benchmark": "2.1.0",
     "eslint": "2.13.0",
     "expose-loader": "^0.7.1",
-    "istanbul": "0.4.3",
+    "istanbul": "0.4.4",
     "jscs": "3.0.4",
     "jsinspect": "0.8.0",
     "mocha": "2.5.3",
