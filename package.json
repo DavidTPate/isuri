@@ -33,7 +33,7 @@
     "eslint": "2.13.1",
     "expose-loader": "^0.7.1",
     "istanbul": "0.4.4",
-    "jscs": "3.0.4",
+    "jscs": "3.0.5",
     "jsinspect": "0.8.0",
     "mocha": "2.5.3",
     "webpack": "1.13.1"
