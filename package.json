@@ -35,7 +35,7 @@
     "istanbul": "0.4.5",
     "jscs": "3.0.7",
     "jsinspect": "0.12.4",
-    "mocha": "3.3.0",
+    "mocha": "3.4.2",
     "webpack": "2.6.0"
   },
   "scripts": {
